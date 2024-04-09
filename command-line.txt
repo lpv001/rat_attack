@@ -1,0 +1,5 @@
+Set-ExecutionPolicy RemoteSigned
+
+Install-Module PSReadLine
+
+Get-Process -Name "System.Net.Sockets.TcpListener" | Stop-Process -Force

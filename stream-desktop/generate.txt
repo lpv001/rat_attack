@@ -1,0 +1,3 @@
+$expression = Get-Content -Path .\test.ps1
+$commandBytes = [System.Text.Encoding]::Unicode.GetBytes($expression)
+$encodedCommand = [Convert]::ToBase64String($commandBytes)
